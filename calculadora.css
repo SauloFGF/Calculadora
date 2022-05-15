@@ -1,0 +1,26 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+#calculator {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px; 
+}
+.viewer{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start:1 ;
+  grid-row-end: 1;
+  background-color:#3E445D;
+  color: #ffffff;
+  text-align: right;
+  font-size: 25px;
+}
+button{
+  background-color: #50546F;
+  color:white;
+  font-size: top;
+
+}
