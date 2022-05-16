@@ -1,32 +1,31 @@
 <h1>JavaScript Calculadora</h1>
 <link rel="stylesheet" href="calculador1.css">
-<p class="warning">Não divida por zero</p>
-<div id="viewer" class="viewer"></div>
+<p class="warning">Error</p>
 
-<div id="calculator" class="flexbox">
+<div class="corpo">
+  <div id="calculator" class="estrutura">
+    <div id="viewer" class="viewer"></div>
+    <button id="clear" class="clear"><img src="alooo.png"> </button>
+    <button id="divided" class="ops">/</button>
+    <button id="times" class="ops">*</button>
 
-  <button id="clear" class="clear">apagar</button>
+    <button class="num" data-num="7">7</button>
+    <button class="num" data-num="8">8</button>
+    <button class="num" data-num="9">9</button>
+    <button data-ops="minus" class="ops">-</button>
 
+    <button class="num" data-num="4">4</button>
+    <button class="num" data-num="5">5</button>
+    <button class="num" data-num="6">6</button>
+    <button id="plus" class="ops">+</button>
 
-  <button class="num" data-num="7">7</button>
-  <button class="num" data-num="8">8</button>
-  <button class="num" data-num="9">9</button>
-  <button data-ops="minus" class="ops">-</button>  
+    <button class="num" data-num="1">1</button>
+    <button class="num" data-num="2">2</button>
+    <button class="num" data-num="3">3</button>
 
-
-  <button class="num" data-num="4">4</button>
-  <button class="num" data-num="5">5</button>
-  <button class="num" data-num="6">6</button>
-  <button data-ops="plus" class="ops">+</button>
-  
-  <button class="num" data-num="1">1</button>
-  <button class="num" data-num="2">2</button>
-  <button class="num" data-num="3">3</button>
-  <button data-ops="times" class="ops">*</button> 
-  
-  <button class="num" data-num=".">.</button>
-  <button class="num" data-num="0">0</button>
-  <button id="equals" class="equals" data-result="">=</button>
-  <button data-ops="divided by" class="ops">/</button>
+    <button class="num" data-num=".">.</button>
+    <button class="num" data-num="0">0</button>
+    <button id="equals" class="equals" data-result="">=</button>
+  </div>
 </div>
 <script src="calculadora.js"></script>
