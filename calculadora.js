@@ -26,3 +26,4 @@ resultado.onclick = () => {
         display.textContent = eval(display.textContent)
     } 
 }
+// teste
