@@ -8,7 +8,6 @@ body{
     flex-direction: row;
     align-items: center;
 }
-
 button{
     background: #50546F;
     border: 1px solid #C4C4C4;
@@ -45,7 +44,9 @@ button{
     font-style: normal;
     font-weight: 500;
     font-size: 43.7838px;
-    line-height: 58px;
+    line-height: 100px;
+    overflow:hidden;
+    width: 20.5ch;    
 }
 .clear {
     padding: 33px 32px;
@@ -83,4 +84,19 @@ button{
     background: #F53360;
     border: 1px solid #C4C4C4;
     border-radius: 7px;
+}
+.error{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background: #DD9AAA;
+    border: 1px solid #F53360;
+    border-radius: 7px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43.7838px;
+    line-height: 100px;
+    overflow:hidden;
+    width: 20.5ch;
 }

@@ -1,3 +1,5 @@
+console.log('init js');
+
 let elementoDosNumeros = document.querySelectorAll(".num")
 let display = document.querySelector(".viewer")
 let limpar = document.getElementById("clear")
@@ -11,19 +13,32 @@ elementoDosNumeros.forEach((numElem) => {
 })
 
 limpar.onclick = () => {
-    display.textContent = ""
+    console.log('onclick limpar');
+    let resultado = document.querySelector(".viewer").innerHTML
+    document.querySelector(".viewer").innerHTML = resultado.substring(0, resultado.length - 1)
 }
 
-operador.forEach((opp) =>{
+operador.forEach((opp) => {
+    console.log('forEach operador', opp);
     opp.onclick = () => {
+        console.log('onclick operador');
         display.textContent += opp.textContent
         console.log(opp.textContent)
     }
-} )
+})
 
-resultado.onclick = () => {
-    if (display.textContent){
+resultado.onclick = (e) => {
+    console.log('onclick resultado');
+    if (display.textContent) {
         display.textContent = eval(display.textContent)
-    } 
+    }
 }
-// teste
+
+let classe = document.getElementById("viewer")
+
+if (classe.textContent === Infinity) {
+    classe.classList.remove("viewer")
+    classe.classList.add("error")
+}
+
+console.log('end js');
