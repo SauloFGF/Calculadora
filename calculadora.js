@@ -1,5 +1,3 @@
-console.log('init js');
-
 let elementoDosNumeros = document.querySelectorAll(".num")
 let display = document.querySelector(".viewer")
 let limpar = document.getElementById("clear")
@@ -17,20 +15,20 @@ limpar.onclick = () => {
     let resultado = document.querySelector(".viewer").innerHTML
     document.querySelector(".viewer").innerHTML = resultado.substring(0, resultado.length - 1)
 }
-
 operador.forEach((opp) => {
-    console.log('forEach operador', opp);
     opp.onclick = () => {
-        console.log('onclick operador');
-        display.textContent += opp.textContent
-        console.log(opp.textContent)
+        console.log(display.textContent)
+        console.log(typeof(display.textContent))
+        if(display.textContent === Number)
+        display.textContent += opp.textContent}
     }
-})
+)
+
 
 resultado.onclick = (e) => {
-    console.log('onclick resultado');
     if (display.textContent) {
         display.textContent = eval(display.textContent)
+        console.log(eval) //colocar outras estruturas de repetições para que não retorne erros
     }
 }
 
@@ -40,5 +38,3 @@ if (classe.textContent === Infinity) {
     classe.classList.remove("viewer")
     classe.classList.add("error")
 }
-
-console.log('end js');
